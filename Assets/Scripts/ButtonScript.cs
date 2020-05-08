@@ -11,6 +11,7 @@ public class ButtonScript : MonoBehaviour
     }
     public void MM()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(0);
     }
     public void exit()

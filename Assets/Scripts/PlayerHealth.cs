@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
         PHealth = healthbarScript.health;
         if (PHealth <= 0)
         {
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene(4);
         }
     }

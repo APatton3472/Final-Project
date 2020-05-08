@@ -26,12 +26,13 @@ public class PauseScript : MonoBehaviour
 			{
 				Time.timeScale = 0;
 				showPaused();
+				Cursor.lockState = CursorLockMode.None;
 			}
 			else if (Time.timeScale == 0)
 			{
-				Debug.Log("high");
 				Time.timeScale = 1;
 				hidePaused();
+				
 			}
 		}
 	}
@@ -70,6 +71,7 @@ public class PauseScript : MonoBehaviour
 	//hides objects with ShowOnPause tag
 	public void hidePaused()
 	{
+		Cursor.lockState = CursorLockMode.Locked;
 		foreach (GameObject g in pauseObjects)
 		{
 			g.SetActive(false);

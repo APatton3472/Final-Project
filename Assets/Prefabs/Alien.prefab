@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a84700c1211334f8977cb2669ddb99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthbarScript: {fileID: 0}
+  EnemyDeath: {fileID: 0}
   health: 20
   impactEffect1: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9,
     type: 3}

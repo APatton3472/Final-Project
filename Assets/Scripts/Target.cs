@@ -2,7 +2,6 @@
 
 public class Target : MonoBehaviour
 {
-    public Healthbar healthbarScript;
 
     public float health = 50f;
    
